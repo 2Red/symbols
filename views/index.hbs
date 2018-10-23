@@ -1,0 +1,41 @@
+<div class="container">
+
+  <marquee>
+    <button class="btn btn-primary">
+      <i class="fa fa-clipboard fa-fw"></i> Click the symbol to copy it !!!
+    </button>
+  </marquee>
+
+  <ul class="nav nav-tabs">
+    <li class="active">
+      <a data-toggle="tab" href="#home">Symbols</a>
+    </li>
+    <li>
+      <a data-toggle="tab" href="#menu1">Emoticon text</a>
+    </li>
+    <li>
+      <a data-toggle="tab" href="#menu2">Emoji</a>
+    </li>
+    <li>
+      <a data-toggle="tab" href="#menu3">Text art</a>
+    </li>
+    <li>
+      <a href="/draw">🎨🖌 Draw your own text arts 🖼</a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      {{>symbols}}
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      {{>emoticon}}
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      {{>emoji}}
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      {{>text-art}}
+    </div>
+  </div>
+</div>
